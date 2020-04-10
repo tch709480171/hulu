@@ -6,7 +6,6 @@ import java.io.Serializable;
 
 @Table(name = "tuser")
 public class User implements Serializable {
-
     @Id
     private  Integer id;
     private  String loginname;
