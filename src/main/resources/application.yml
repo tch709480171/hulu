@@ -1,0 +1,25 @@
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+ #mapper-location: classpath:sqlmapconifg.xml
+  type-aliases-package: com.it.bean
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #mysql
+    url: jdbc:mysql://121.196.241.234:3306/gscms
+    driver-class-name: com.mysql.jdbc.Driver
+    username: tch
+    password: Tch123456
+    #moban
+  freemarker:
+    cache: false
+    charset: utf-8
+    content-type: text/html
+    template-loader-path: classpath:/templates/
+    suffix: .ftl
+  #配置redis
+  redis:
+     #指定IP地址
+    host: 127.0.0.1
+    #端口号
+    port: 6379
